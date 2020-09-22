@@ -10,7 +10,7 @@ control 'core-plans-libaio-library-exists' do
   Verify libaio library by ensuring that 
   (1) its installation directory exists; 
   (2) the library exists; 
-  (3) its pkgconfig metadata contains the expected version
+  Note: no pkgconfig metadata present so no way to verify the version
   '
   
   plan_installation_directory = command("hab pkg path #{plan_origin}/#{plan_name}")
